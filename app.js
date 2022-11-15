@@ -7,5 +7,7 @@ app.set('views', './views');
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-    res.render('home')
+    res.render('home', {
+        titulo: "Clase 10 de Backend"
+    })
 })
