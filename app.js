@@ -11,3 +11,12 @@ app.get('/', (req, res) => {
         titulo: "Clase 10 de Backend"
     })
 })
+
+app.get('/datos', (req, res) => {
+    res.render('progress', {
+        min: req.query.min,
+        max: req.query.max,
+        nivel: req.query.nivel,
+        titulo: req.query.titulo
+    })
+})
